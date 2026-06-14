@@ -47,35 +47,35 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['proxygate', 'llm gateway', 'llm proxy'],
-    response: "**ProxyGateLLM** — Multi-LLM API Gateway supporting 22 LLM providers (350+ models). OpenAI-compatible API, Docker-ready. Built with Node.js/Express. [GitHub](https://github.com/mulkymalikuldhaher/ProxyGateLLM)",
+    response: "**ProxyGateLLM** — Multi-LLM API Gateway supporting 22 LLM providers (350+ models). OpenAI-compatible API, Docker-ready. Built with Node.js/Express. [GitHub](https://github.com/dhaher-labs/ProxyGateLLM)",
   },
   {
     patterns: ['opencode', 'android', 'coding agent'],
-    response: "**OpenCode-Android** — Native Android AI coding agent with Material Design 3 and SSE streaming for real-time code generation. Built with Kotlin. [GitHub](https://github.com/mulkymalikuldhaher/OpenCode-Android)",
+    response: "**OpenCode-Android** — Native Android AI coding agent with Material Design 3 and SSE streaming for real-time code generation. Built with Kotlin. [GitHub](https://github.com/dhaher-labs/OpenCode-Android)",
   },
   {
     patterns: ['quant', 'nanggroe', 'trading'],
-    response: "**Quant-Nanggroe-AI** — Trading Research Dashboard for market analysis and data visualization. Built with React, TypeScript, and Tailwind CSS. [GitHub](https://github.com/mulkymalikuldhaher/Quant-Nanggroe-AI)",
+    response: "**Quant-Nanggroe-AI** — Trading Research Dashboard for market analysis and data visualization. Built with React, TypeScript, and Tailwind CSS. [GitHub](https://github.com/dhaher-labs/Quant-Nanggroe-AI)",
   },
   {
     patterns: ['blackhornet', 'reconnaissance', 'data recon'],
-    response: "**blackhornet** — Autonomous data reconnaissance system for automated data collection and analysis. Built with AI and Rust. [GitHub](https://github.com/mulkymalikuldhaher/blackhornet)",
+    response: "**blackhornet** — Autonomous data reconnaissance system for automated data collection and analysis. Built with AI and Rust. [GitHub](https://github.com/dhaher-labs/blackhornet)",
   },
   {
     patterns: ['kalen', 'workflow', 'orchestration'],
-    response: "**KALEN-Autonomous-Workflow** — Workflow orchestration system for task automation and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/mulkymalikuldhaher/KALEN-Autonomous-Workflow)",
+    response: "**KALEN-Autonomous-Workflow** — Workflow orchestration system for task automation and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN-Autonomous-Workflow)",
   },
   {
     patterns: ['mnemosyne', 'memory', 'ai agent memory'],
-    response: "**Mnemosyne-AI** — Memory and context management system for AI agents, enabling persistent context across conversations. Built with Python. [GitHub](https://github.com/mulkymalikuldhaher/Mnemosyne-AI)",
+    response: "**Mnemosyne-AI** — Memory and context management system for AI agents, enabling persistent context across conversations. Built with Python. [GitHub](https://github.com/dhaher-labs/Mnemosyne-AI)",
   },
   {
     patterns: ['multicolony', 'multi-agent', 'colony'],
-    response: "**AI-MultiColony-Ecosystem** — Multi-agent orchestration framework for coordinating multiple AI agents on complex tasks. Built with Python. [GitHub](https://github.com/mulkymalikuldhaher/AI-MultiColony-Ecosystem)",
+    response: "**AI-MultiColony-Ecosystem** — Multi-agent orchestration framework for coordinating multiple AI agents on complex tasks. Built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
   },
   {
     patterns: ['ghoststudio', 'creative studio', 'ghost studio'],
-    response: "**GhostStudio-AI** — AI-powered creative studio for content generation using LLM integration. Built with TypeScript. [GitHub](https://github.com/mulkymalikuldhaher/GhostStudio-AI)",
+    response: "**GhostStudio-AI** — AI-powered creative studio for content generation using LLM integration. Built with TypeScript. [GitHub](https://github.com/dhaher-labs/GhostStudio-AI)",
   },
   {
     patterns: ['contact', 'email', 'reach'],
@@ -87,15 +87,15 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['misi', 'screener', 'market intelligence'],
-    response: "**Misi-Screener** — Market intelligence engine with agent-based architecture for real-time market data screening. Built with Python and FastAPI. [GitHub](https://github.com/mulkymalikuldhaher/Misi-Screener)",
+    response: "**Misi-Screener** — Market intelligence engine with agent-based architecture for real-time market data screening. Built with Python and FastAPI. [GitHub](https://github.com/dhaher-labs/Misi-Screener)",
   },
   {
     patterns: ['glowpilot', 'skincare'],
-    response: "**GlowPilot-AI** — AI skincare advisor with LLM-powered analysis and voice support. Built with TypeScript and LLM. [GitHub](https://github.com/mulkymalikuldhaher/GlowPilot-AI)",
+    response: "**GlowPilot-AI** — AI skincare advisor with LLM-powered analysis and voice support. Built with TypeScript and LLM. [GitHub](https://github.com/dhaher-labs/GlowPilot-AI)",
   },
   {
     patterns: ['iot', 'nanggroe-iot'],
-    response: "**Nanggroe-IoT** — IoT infrastructure project for connected devices and sensor data management. Built with Python. [GitHub](https://github.com/mulkymalikuldhaher/Nanggroe-IoT)",
+    response: "**Nanggroe-IoT** — IoT infrastructure project for connected devices and sensor data management. Built with Python. [GitHub](https://github.com/dhaher-labs/Nanggroe-IoT)",
   },
   {
     patterns: ['repos migrated', 'account', 'old account', 'stars', 'forks', 'migrated'],

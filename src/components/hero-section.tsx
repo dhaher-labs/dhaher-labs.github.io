@@ -32,7 +32,7 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6">
-        {/* AI Agent Grade badge */}
+        {/* Org badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card text-xs font-mono text-muted-foreground">
             <Zap className="h-3 w-3 text-gold" />
-            <span>AI Agent Grade Powered</span>
+            <span>Practical AI & Research Lab</span>
             <span className="w-1.5 h-1.5 rounded-full bg-emerald animate-pulse" />
           </span>
         </motion.div>
