@@ -83,7 +83,7 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['instagram', 'ig', 'social'],
-    response: "Dhaher Labs: [@dhaherlabs](https://instagram.com/dhaherlabs) | Personal: [@mulkymalikuldhr](https://instagram.com/mulkymalikuldhr)",
+    response: "Dhaher Labs: [@dhaherlabs](https://instagram.com/dhaherlabs) | Personal: [@mulkymalikuldhaher](https://instagram.com/mulkymalikuldhaher)",
   },
   {
     patterns: ['misi', 'screener', 'market intelligence'],

@@ -16,7 +16,7 @@ const programs = [
   {
     key: 'googdev',
     icon: Chrome,
-    href: 'https://g.dev/mulkymalikuldhr',
+    href: 'https://g.dev/mulkymalikuldhaher',
     color: 'text-blue-400',
     bgGlow: 'glow-cyan',
     borderColor: 'border-blue-400/20 hover:border-blue-400/40',
