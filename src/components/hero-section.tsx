@@ -108,23 +108,23 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-wrap items-center justify-center gap-3"
         >
-          <a href="#projects">
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground glass-button glow-gold h-10 px-6">
+          <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground glass-button glow-gold h-10 px-6">
+            <a href="#projects">
               {t('hero.cta.projects')}
-            </Button>
-          </a>
-          <a href="https://github.com/dhaher-labs" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="glass-button border-border/30 h-10 px-6">
+            </a>
+          </Button>
+          <Button asChild variant="outline" className="glass-button border-border/30 h-10 px-6">
+            <a href="https://github.com/dhaher-labs" target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4 mr-2" />
               {t('hero.cta.github')}
-            </Button>
-          </a>
-          <a href="#chat">
-            <Button variant="ghost" className="glass-button text-accent hover:text-accent/80 h-10 px-6">
+            </a>
+          </Button>
+          <Button asChild variant="ghost" className="glass-button text-accent hover:text-accent/80 h-10 px-6">
+            <a href="#chat">
               <Sparkles className="h-4 w-4 mr-2" />
               {t('hero.cta.chat')}
-            </Button>
-          </a>
+            </a>
+          </Button>
         </motion.div>
 
         {/* Scroll indicator */}

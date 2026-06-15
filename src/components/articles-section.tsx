@@ -137,16 +137,13 @@ export function ArticlesSection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <a href="/articles">
-            <Button
-              variant="outline"
-              className="glass-button border-border/30 h-9 px-6 text-xs"
-            >
+          <Button asChild variant="outline" className="glass-button border-border/30 h-9 px-6 text-xs">
+            <a href="/articles">
               <Tag className="h-3 w-3 mr-2" />
               {t('articles.readMore')}
               <ArrowRight className="h-3 w-3 ml-2" />
-            </Button>
-          </a>
+            </a>
+          </Button>
         </motion.div>
       </div>
     </section>

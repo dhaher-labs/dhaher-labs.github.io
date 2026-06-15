@@ -214,12 +214,12 @@ export function ProjectsSection() {
         )}
 
         <div className="text-center mt-8">
-          <a href="https://github.com/dhaher-labs" target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="glass-button border-border/30">
+          <Button asChild variant="outline" className="glass-button border-border/30">
+            <a href="https://github.com/dhaher-labs" target="_blank" rel="noopener noreferrer">
               <Github className="h-4 w-4 mr-2" />
               {t('projects.view')}
-            </Button>
-          </a>
+            </a>
+          </Button>
         </div>
       </div>
     </section>

@@ -76,16 +76,16 @@ export function FounderSection() {
                 </a>
               </div>
 
-              <a
-                href="https://mulkymalikuldhaher.github.io"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="outline" className="glass-button border-border/30 text-xs h-9" size="sm">
+              <Button asChild variant="outline" className="glass-button border-border/30 text-xs h-9" size="sm">
+                <a
+                  href="https://mulkymalikuldhaher.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <ExternalLink className="h-3.5 w-3.5 mr-1.5" />
                   {t('founder.cta')}
-                </Button>
-              </a>
+                </a>
+              </Button>
             </div>
           </div>
         </motion.div>

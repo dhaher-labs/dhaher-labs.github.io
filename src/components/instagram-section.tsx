@@ -121,16 +121,16 @@ export function InstagramSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <a
-            href="https://instagram.com/dhaherlabs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="glass-button bg-primary hover:bg-primary/90 text-primary-foreground glow-gold">
+          <Button asChild className="glass-button bg-primary hover:bg-primary/90 text-primary-foreground glow-gold">
+            <a
+              href="https://instagram.com/dhaherlabs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Instagram className="h-4 w-4 mr-2" />
               {t('instagram.cta')}
-            </Button>
-          </a>
+            </a>
+          </Button>
           <div className="mt-4">
             <a
               href="https://instagram.com/dhaherlabs"

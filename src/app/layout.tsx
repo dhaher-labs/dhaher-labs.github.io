@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Dhaher Labs — AI • Quant • Automated Workflows • Open Source',
+  title: 'Dhaher Labs — LLM Tools • Quant • Automated Workflows • Open Source',
   description: 'A small lab building practical AI systems, quantitative tools, and automated workflows. Not a company, not a startup — just a lab.',
   keywords: ['Dhaher Labs', 'AI', 'Quant', 'Automated Workflows', 'Open Source', 'Mulky Malikul Dhaher'],
   authors: [{ name: 'Mulky Malikul Dhaher' }],
   openGraph: {
     title: 'Dhaher Labs',
-    description: 'AI • Quant • Automated Workflows • Open Source',
+    description: 'LLM Tools • Quant • Automated Workflows • Open Source',
     url: 'https://dhaher-labs.github.io',
     siteName: 'Dhaher Labs',
     type: 'website',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Dhaher Labs',
-    description: 'AI • Quant • Automated Workflows • Open Source',
+    description: 'LLM Tools • Quant • Automated Workflows • Open Source',
   },
 }
 
@@ -40,6 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="monetag" content="fb7c89909ef8053d0efc70f52a4345b0" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
