@@ -21,8 +21,8 @@ export function AboutSection() {
 
       <div className="container-glass">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
           className="mb-12"
@@ -37,13 +37,13 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* What is Dhaher Labs */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="space-y-4"
           >
-            <div className="glass-card glass-card-hover rounded-xl p-6 space-y-4">
+            <div className="liquid-glass iridescent-border rounded-xl p-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">{t('about.p1')}</p>
               <p className="text-muted-foreground leading-relaxed">{t('about.p2')}</p>
               <p className="text-muted-foreground leading-relaxed">{t('about.p3')}</p>
@@ -55,14 +55,14 @@ export function AboutSection() {
               className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline mt-2 glass-button px-3 py-1.5 rounded-lg border border-primary/20"
             >
               <ExternalLink className="h-3 w-3" />
-              mulkymalikuldhaher.github.io
+              Portfolio
             </a>
           </motion.div>
 
           {/* Mission */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
@@ -73,11 +73,11 @@ export function AboutSection() {
                 return (
                   <motion.div
                     key={item.key}
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: '-50px' }}
                     transition={{ duration: 0.4, delay: 0.3 + i * 0.1 }}
-                    className="glass-card glass-card-hover rounded-xl p-4 flex items-start gap-3"
+                    className="liquid-glass rounded-xl p-4 flex items-start gap-3"
                   >
                     <div
                       className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"

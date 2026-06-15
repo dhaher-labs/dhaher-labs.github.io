@@ -32,7 +32,7 @@ const CONTACT_ITEMS = [
   {
     icon: ExternalLink,
     labelKey: 'contact.portfolio',
-    value: 'mulkymalikuldhaher.github.io',
+    value: 'Portfolio',
     href: 'https://mulkymalikuldhaher.github.io',
     accent: '#A78BFA',
     desc: 'Personal portfolio',
@@ -49,7 +49,7 @@ export function ContactSection() {
 
       <div className="container-glass">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
@@ -68,11 +68,11 @@ export function ContactSection() {
                 href={item.href}
                 target={item.href.startsWith('mailto:') ? undefined : '_blank'}
                 rel={item.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="glass-card glass-card-hover tilt-card rounded-xl p-6 flex flex-col items-center text-center group"
+                className="liquid-glass iridescent-border rounded-xl p-6 flex flex-col items-center text-center group"
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300"

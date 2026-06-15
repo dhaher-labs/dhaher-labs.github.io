@@ -1,6 +1,7 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowDown, Github, Sparkles, Zap } from 'lucide-react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
@@ -9,17 +10,41 @@ import { ParticleCanvas } from '@/components/particle-canvas'
 
 export function HeroSection() {
   const { t } = useLanguage()
+  const sectionRef = useRef<HTMLElement>(null)
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  })
+
+  const orbY1 = useTransform(scrollYProgress, [0, 1], [0, 120])
+  const orbY2 = useTransform(scrollYProgress, [0, 1], [0, -80])
+  const orbY3 = useTransform(scrollYProgress, [0, 1], [0, 60])
+  const orbY4 = useTransform(scrollYProgress, [0, 1], [0, -100])
+  const orbScale1 = useTransform(scrollYProgress, [0, 1], [1, 1.15])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
+    <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
       {/* Particle background */}
       <ParticleCanvas />
 
-      {/* Ambient orbs */}
-      <div className="ambient-orb w-[500px] h-[500px] bg-gold top-[5%] left-[5%]" style={{ animationDelay: '0s' }} />
-      <div className="ambient-orb w-[400px] h-[400px] bg-cyan top-[40%] right-[5%]" style={{ animationDelay: '7s' }} />
-      <div className="ambient-orb w-[350px] h-[350px] bg-violet bottom-[10%] left-[25%]" style={{ animationDelay: '14s' }} />
-      <div className="ambient-orb w-[300px] h-[300px] bg-emerald bottom-[30%] right-[20%]" style={{ animationDelay: '3s' }} />
+      {/* Ambient orbs with parallax */}
+      <motion.div
+        className="ambient-orb w-[500px] h-[500px] bg-gold top-[5%] left-[5%]"
+        style={{ y: orbY1, scale: orbScale1, animationDelay: '0s' }}
+      />
+      <motion.div
+        className="ambient-orb w-[400px] h-[400px] bg-cyan top-[40%] right-[5%]"
+        style={{ y: orbY2, animationDelay: '7s' }}
+      />
+      <motion.div
+        className="ambient-orb w-[350px] h-[350px] bg-violet bottom-[10%] left-[25%]"
+        style={{ y: orbY3, animationDelay: '14s' }}
+      />
+      <motion.div
+        className="ambient-orb w-[300px] h-[300px] bg-emerald bottom-[30%] right-[20%]"
+        style={{ y: orbY4, animationDelay: '3s' }}
+      />
 
       {/* Aurora bands */}
       <div className="aurora-band top-[20%]" style={{ animationDelay: '0s' }} />
@@ -39,9 +64,9 @@ export function HeroSection() {
           transition={{ duration: 0.6 }}
           className="mb-6"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card text-xs font-mono text-muted-foreground">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full liquid-glass text-xs font-mono text-muted-foreground">
             <Zap className="h-3 w-3 text-gold" />
-            <span>Practical AI & Research Lab</span>
+            <span>Practical LLM & Research Lab</span>
             <span className="w-1.5 h-1.5 rounded-full bg-emerald animate-pulse" />
           </span>
         </motion.div>
@@ -53,7 +78,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.05 }}
           className="mb-6 flex justify-center"
         >
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl glass-card p-2 border border-primary/20 glow-pulse">
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl liquid-glass-deep p-2 iridescent-border glow-pulse">
             <Image
               src="/dhaherlabs-logo-dark.png"
               alt="Dhaher Labs Logo"

@@ -23,11 +23,11 @@ export function ArticlesSection() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card text-xs font-mono text-muted-foreground mb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full liquid-glass text-xs font-mono text-muted-foreground mb-4">
             <BookOpen className="h-3 w-3 text-gold" />
             {t('articles.title')}
           </span>
@@ -46,12 +46,12 @@ export function ArticlesSection() {
               key={article.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="article-card glass-card holo-border-always rounded-2xl p-6 group cursor-pointer"
+              className="article-card liquid-glass iridescent-border holo-border-always rounded-2xl p-6 group cursor-pointer"
               onClick={() => window.location.href = `/articles?id=${article.id}`}
             >
-              {/* Category & AI Badge */}
+              {/* Category & LLM Badge */}
               <div className="flex items-center justify-between mb-4">
                 <span className="category-tag px-2.5 py-1 rounded-md text-[10px] font-mono font-bold uppercase">
                   {article.category}
@@ -108,9 +108,9 @@ export function ArticlesSection() {
               key={article.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="article-card glass-card rounded-xl p-4 group cursor-pointer hover:border-primary/20"
+              className="article-card liquid-glass rounded-xl p-4 group cursor-pointer hover:border-primary/20"
               onClick={() => window.location.href = `/articles?id=${article.id}`}
             >
               <div className="flex items-center justify-between mb-2">
@@ -134,7 +134,7 @@ export function ArticlesSection() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: '-50px' }}
           className="text-center"
         >
           <Button asChild variant="outline" className="glass-button border-border/30 h-9 px-6 text-xs">

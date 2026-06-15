@@ -15,8 +15,8 @@ export function FounderSection() {
 
       <div className="container-glass">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
           className="mb-12"
@@ -26,11 +26,11 @@ export function FounderSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="glass-card glass-card-hover holo-border rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto"
+          className="liquid-glass iridescent-border holo-border-always rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto"
         >
           <div className="flex flex-col sm:flex-row items-start gap-6">
             {/* Avatar */}

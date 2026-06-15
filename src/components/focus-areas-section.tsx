@@ -35,7 +35,7 @@ const FOCUS_AREAS = [
     descKey: 'focus.open.desc',
     accent: '#34D399',
     glow: '',
-    tags: ['Android Agents', 'Creative Studios', 'IoT'],
+    tags: ['Android Tools', 'Creative Studios', 'IoT'],
   },
 ]
 
@@ -65,11 +65,11 @@ export function FocusAreasSection() {
             return (
               <motion.div
                 key={area.titleKey}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`glass-card glass-card-hover tilt-card rounded-xl p-6 ${area.glow}`}
+                transition={{ duration: 0.5, delay: i * 0.12 }}
+                className={`liquid-glass iridescent-border rounded-xl p-6 ${area.glow}`}
               >
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"

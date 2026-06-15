@@ -18,7 +18,7 @@ const INSTA_POSTS = [
     id: 2,
     gradient: 'from-cyan-500/20 to-teal-600/20',
     title: 'Quant-Nanggroe-AI',
-    desc: 'Trading Research Dashboard — market analysis at your fingertips',
+    desc: 'Trading Research Dashboard',
     likes: 35,
     comments: 5,
   },
@@ -26,7 +26,7 @@ const INSTA_POSTS = [
     id: 3,
     gradient: 'from-violet-500/20 to-purple-600/20',
     title: 'OpenCode-Android',
-    desc: 'Native Android AI coding agent — code generation on the go',
+    desc: 'Native Android coding assistant',
     likes: 67,
     comments: 12,
   },
@@ -34,7 +34,7 @@ const INSTA_POSTS = [
     id: 4,
     gradient: 'from-emerald-500/20 to-green-600/20',
     title: 'Nanggroe-IoT',
-    desc: 'IoT infrastructure — connected devices & sensor management',
+    desc: 'IoT infrastructure for sensor management',
     likes: 28,
     comments: 3,
   },
@@ -42,14 +42,14 @@ const INSTA_POSTS = [
     id: 5,
     gradient: 'from-rose-500/20 to-pink-600/20',
     title: 'GlowPilot',
-    desc: 'AI skincare advisor — LLM + voice support',
+    desc: 'Skincare advisor with LLM + voice',
     likes: 54,
     comments: 9,
   },
   {
     id: 6,
-    gradient: 'from-blue-500/20 to-indigo-600/20',
-    title: 'K.A.L.E.N',
+    gradient: 'from-emerald-500/20 to-green-600/20',
+    title: 'KALEN',
     desc: 'Workflow orchestration system',
     likes: 31,
     comments: 6,
@@ -89,11 +89,11 @@ export function InstagramSection() {
           {INSTA_POSTS.map((post, i) => (
             <motion.div
               key={post.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="insta-card glass-card glass-card-hover rounded-xl aspect-square relative cursor-pointer group"
+              className="insta-card liquid-glass iridescent-border rounded-xl aspect-square relative cursor-pointer group"
             >
               {/* Gradient background */}
               <div className={`absolute inset-0 rounded-xl bg-gradient-to-br ${post.gradient} grid-pattern`} />

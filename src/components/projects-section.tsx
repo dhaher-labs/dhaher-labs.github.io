@@ -34,11 +34,11 @@ function ProjectCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20, scale: 0.97 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay: index * 0.05 }}
-      className={`glass-card glass-card-hover rounded-xl p-5 flex flex-col ${
+      className={`liquid-glass iridescent-border rounded-xl p-5 flex flex-col ${
         isFeatured ? 'holo-border holo-border-always glow-pulse' : ''
       }`}
     >
@@ -46,7 +46,7 @@ function ProjectCard({
       {isFeatured && (
         <div className="mb-3 flex items-center gap-1.5">
           <span className="badge-shimmer px-2 py-0.5 rounded-md text-[9px] font-mono text-primary border border-primary/20 bg-primary/5">
-            ★ Featured
+            Featured
           </span>
         </div>
       )}
@@ -105,7 +105,7 @@ function ProjectCard({
 
 function ProjectSkeleton() {
   return (
-    <div className="glass-card rounded-xl p-5">
+    <div className="liquid-glass rounded-xl p-5">
       <div className="flex items-center gap-2 mb-3">
         <Skeleton className="w-8 h-8 rounded-lg" />
         <div>

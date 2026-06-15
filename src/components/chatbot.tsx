@@ -39,11 +39,11 @@ type ChatMode = 'agent' | 'scan' | 'code'
 const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   {
     patterns: ['who is mulky', 'about mulky', 'tell me about mulky', 'who built this', 'who made this'],
-    response: "Mulky Malikul Dhaher is building Dhaher Labs — a small personal lab where he builds practical AI systems, quantitative tools, and automated workflows. By day, he's an industrial maintenance technician and panel control operator at a cement packing plant in Lhokseumawe, Aceh. By night, he codes. He studies Sistem Informasi at Universitas Terbuka.",
+    response: "Mulky Malikul Dhaher is building Dhaher Labs — a small personal lab where he builds LLM tools, quant research dashboards, and automated workflows. By day, he works as an industrial maintenance technician and panel control operator at a cement packing plant in Lhokseumawe, Aceh. By night, he codes. He studies Sistem Informasi at Universitas Terbuka.",
   },
   {
     patterns: ['dhaher labs', 'what is dhaher labs', 'about the lab'],
-    response: "Dhaher Labs is a small personal lab — not a company or startup — building LLM-integrated tools, quantitative research, and automated workflows. Focus areas: LLM Tools, Quant Research, Automated Workflows, and Open Source. Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs",
+    response: "Dhaher Labs is a small personal lab in Aceh — not a company or startup — building LLM tools, quant research dashboards, and automated workflows. Run by one person. Focus areas: LLM Tools, Quant Research, Automated Workflows, Open Source. Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs",
   },
   {
     patterns: ['proxygate', 'llm gateway', 'llm proxy'],
@@ -51,7 +51,7 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['opencode', 'android', 'coding agent'],
-    response: "**OpenCode-Android** — Native Android AI coding agent with Material Design 3 and SSE streaming for real-time code generation. Built with Kotlin. [GitHub](https://github.com/dhaher-labs/OpenCode-Android)",
+    response: "**OpenCode-Android** — Native Android coding assistant with Material Design 3 and SSE streaming for real-time code generation. Built with Kotlin. [GitHub](https://github.com/dhaher-labs/OpenCode-Android)",
   },
   {
     patterns: ['quant', 'nanggroe', 'trading'],
@@ -59,11 +59,11 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['blackhornet', 'reconnaissance', 'data recon'],
-    response: "**blackhornet** — Data reconnaissance toolkit for automated data collection and analysis. Research project exploring agent-based patterns. Built with Rust. [GitHub](https://github.com/dhaher-labs/blackhornet)",
+    response: "**blackhornet** — Data reconnaissance toolkit for automated data collection and analysis. Research project exploring automated patterns. Built with Rust. [GitHub](https://github.com/dhaher-labs/blackhornet)",
   },
   {
     patterns: ['kalen', 'workflow', 'orchestration'],
-    response: "**KALEN** — Workflow orchestration system for configurable task scheduling and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN-Autonomous-Workflow)",
+    response: "**KALEN** — Workflow orchestration system for configurable task scheduling and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN)",
   },
   {
     patterns: ['mnemosyne', 'memory', 'llm memory'],
@@ -71,7 +71,7 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['multicolony', 'multi-agent', 'colony'],
-    response: "**AI-MultiColony-Ecosystem** — Multi-agent coordination framework exploring how automated agents can communicate and collaborate. Research project built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
+    response: "**AI-MultiColony-Ecosystem** — Multi-agent coordination framework exploring how automated systems can communicate and collaborate. Research project built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
   },
   {
     patterns: ['ghoststudio', 'creative studio', 'ghost studio'],
@@ -91,7 +91,7 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['glowpilot', 'skincare'],
-    response: "**GlowPilot-AI** — LLM-powered skincare advisor with analysis and voice support. Built with TypeScript and LLM. [GitHub](https://github.com/dhaher-labs/GlowPilot-AI)",
+    response: "**GlowPilot-AI** — Skincare advisor with LLM integration, analysis, and voice support. Built with TypeScript. [GitHub](https://github.com/dhaher-labs/GlowPilot-AI)",
   },
   {
     patterns: ['iot', 'nanggroe-iot'],
@@ -317,7 +317,7 @@ export function Chatbot() {
       }
 
       const apiMessages = [
-        { role: 'assistant' as const, content: 'I am a repository analysis agent for Dhaher Labs.' },
+        { role: 'assistant' as const, content: 'I am a repository analysis assistant for Dhaher Labs.' },
         { role: 'user' as const, content: `Please analyze this repository: ${owner}/${repo}\n\n${repoContext}` },
       ]
       await sendToAPI(apiMessages, 'repo-scan', repoContext)
@@ -348,7 +348,7 @@ export function Chatbot() {
     setCodeInput('')
 
     const apiMessages = [
-      { role: 'assistant' as const, content: 'I am a code review agent for Dhaher Labs.' },
+      { role: 'assistant' as const, content: 'I am a code review assistant for Dhaher Labs.' },
       { role: 'user' as const, content: `Please analyze this code:\n\n${code}` },
     ]
     await sendToAPI(apiMessages, 'code-analysis')
