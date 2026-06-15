@@ -26,7 +26,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'about.label': 'About',
     'about.title': 'What is Dhaher Labs?',
     'about.p1': 'Dhaher Labs is a small personal lab — not a company, not a startup. It\'s where practical AI systems, quantitative tools, and automated workflows are built from scratch.',
-    'about.p2': 'The lab focuses on solving real problems with code: from multi-LLM gateways to trading research dashboards, from IoT infrastructure to AI-powered creative studios.',
+    'about.p2': 'The lab focuses on solving real problems with code: from multi-LLM gateways to trading research dashboards, from IoT infrastructure to creative studio tooling.',
     'about.p3': 'Every project is open source and built with the philosophy that technology should be accessible, practical, and honest.',
     'about.mission.title': 'Our Mission',
     'about.mission.p1': 'Build practical AI systems that solve real problems — not demos, not hype.',
