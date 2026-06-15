@@ -1,33 +1,114 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Chrome, Bot, Award, ExternalLink } from 'lucide-react'
+import { ExternalLink, Award } from 'lucide-react'
 import { useLanguage } from '@/providers/language-provider'
 
 const programs = [
   {
     key: 'github',
-    icon: Github,
     href: 'https://github.com/mulkymalikuldhaher',
-    color: 'text-foreground',
-    bgGlow: 'glow-gold',
-    borderColor: 'border-foreground/20 hover:border-foreground/40',
+    color: '#8B949E',
+    icon: '🐙',
+    label: 'GitHub Developer',
   },
   {
     key: 'googdev',
-    icon: Chrome,
     href: 'https://g.dev/mulkymalikuldhaher',
-    color: 'text-blue-400',
-    bgGlow: 'glow-cyan',
-    borderColor: 'border-blue-400/20 hover:border-blue-400/40',
+    color: '#4285F4',
+    icon: '🌐',
+    label: 'Google Developer',
   },
   {
     key: 'copilot',
-    icon: Bot,
     href: 'https://github.com/features/copilot',
-    color: 'text-emerald',
-    bgGlow: 'glow-emerald',
-    borderColor: 'border-emerald/20 hover:border-emerald/40',
+    color: '#6E40C9',
+    icon: '🤖',
+    label: 'GitHub Copilot',
+  },
+  {
+    key: 'android',
+    href: 'https://developer.android.com',
+    color: '#3DDC84',
+    icon: '📱',
+    label: 'Android Developer',
+  },
+  {
+    key: 'firebase',
+    href: 'https://firebase.google.com',
+    color: '#FFCA28',
+    icon: '🔥',
+    label: 'Firebase Developer',
+  },
+  {
+    key: 'cloud',
+    href: 'https://cloud.google.com',
+    color: '#4285F4',
+    icon: '☁️',
+    label: 'Google Cloud',
+  },
+  {
+    key: 'web',
+    href: 'https://web.dev',
+    color: '#4285F4',
+    icon: '🌍',
+    label: 'Web Developer',
+  },
+  {
+    key: 'ai',
+    href: 'https://ai.google',
+    color: '#D9A441',
+    icon: '🧠',
+    label: 'Google AI',
+  },
+  {
+    key: 'actions',
+    href: 'https://github.com/features/actions',
+    color: '#2088FC',
+    icon: '⚡',
+    label: 'GitHub Actions',
+  },
+  {
+    key: 'codespaces',
+    href: 'https://github.com/features/codespaces',
+    color: '#2088FC',
+    icon: '💻',
+    label: 'GitHub Codespaces',
+  },
+  {
+    key: 'security',
+    href: 'https://github.com/features/security',
+    color: '#2088FC',
+    icon: '🔒',
+    label: 'GitHub Security',
+  },
+  {
+    key: 'tensorflow',
+    href: 'https://www.tensorflow.org',
+    color: '#FF6F00',
+    icon: '📊',
+    label: 'TensorFlow',
+  },
+  {
+    key: 'chrome',
+    href: 'https://developer.chrome.com',
+    color: '#4285F4',
+    icon: '🌐',
+    label: 'Chrome Developer',
+  },
+  {
+    key: 'flutter',
+    href: 'https://flutter.dev',
+    color: '#02569B',
+    icon: '🦋',
+    label: 'Flutter Developer',
+  },
+  {
+    key: 'angular',
+    href: 'https://angular.dev',
+    color: '#DD0031',
+    icon: '🔴',
+    label: 'Angular Developer',
   },
 ]
 
@@ -37,14 +118,8 @@ export function DeveloperProgramsSection() {
   return (
     <section id="devprograms" className="py-20 relative overflow-hidden">
       {/* Ambient orbs */}
-      <div
-        className="ambient-orb w-[350px] h-[350px] bg-emerald top-[15%] left-[8%]"
-        style={{ animationDelay: '5s' }}
-      />
-      <div
-        className="ambient-orb w-[300px] h-[300px] bg-gold bottom-[15%] right-[10%]"
-        style={{ animationDelay: '10s' }}
-      />
+      <div className="ambient-orb w-[350px] h-[350px] bg-emerald top-[15%] left-[8%]" style={{ animationDelay: '5s' }} />
+      <div className="ambient-orb w-[300px] h-[300px] bg-gold bottom-[15%] right-[10%]" style={{ animationDelay: '10s' }} />
 
       <div className="container-glass relative z-10">
         {/* Header */}
@@ -67,48 +142,65 @@ export function DeveloperProgramsSection() {
           </p>
         </motion.div>
 
-        {/* Program Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {programs.map((program, idx) => {
-            const Icon = program.icon
-            return (
+        {/* Program Cards - Google Programs */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-8"
+        >
+          <h3 className="text-sm font-mono text-muted-foreground mb-4 uppercase tracking-wider">Google Developer Ecosystem</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {programs.filter(p => ['googdev', 'android', 'firebase', 'cloud', 'web', 'ai', 'tensorflow', 'chrome', 'flutter', 'angular'].includes(p.key)).map((program, idx) => (
               <motion.a
                 key={program.key}
                 href={program.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className={`floating-island glass-card tilt-card rounded-2xl p-6 text-center group border ${program.borderColor} transition-all duration-500`}
+                transition={{ duration: 0.3, delay: idx * 0.05 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                className="glass-card rounded-xl p-3 text-center group border border-transparent hover:border-primary/20 transition-all duration-300"
               >
-                {/* Badge */}
-                <div
-                  className={`developer-badge w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center glass-button ${program.bgGlow}`}
-                >
-                  <Icon className={`h-7 w-7 ${program.color}`} />
-                </div>
-
-                {/* Title */}
-                <h3 className="text-base font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
-                  {t(`devprograms.${program.key}.title`)}
-                </h3>
-
-                {/* Description */}
-                <p className="text-xs text-muted-foreground mb-4 leading-relaxed">
-                  {t(`devprograms.${program.key}.desc`)}
-                </p>
-
-                {/* Link indicator */}
-                <span className="inline-flex items-center gap-1 text-[10px] font-mono text-primary/70 group-hover:text-primary transition-colors">
-                  <ExternalLink className="h-2.5 w-2.5" />
-                  Visit
-                </span>
+                <div className="text-2xl mb-1.5">{program.icon}</div>
+                <p className="text-[10px] font-medium text-muted-foreground group-hover:text-foreground transition-colors leading-tight">{program.label}</p>
+                <ExternalLink className="h-2.5 w-2.5 text-primary/40 group-hover:text-primary mx-auto mt-1.5 transition-colors" />
               </motion.a>
-            )
-          })}
-        </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* GitHub Programs */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <h3 className="text-sm font-mono text-muted-foreground mb-4 uppercase tracking-wider">GitHub Ecosystem</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            {programs.filter(p => ['github', 'copilot', 'actions', 'codespaces', 'security'].includes(p.key)).map((program, idx) => (
+              <motion.a
+                key={program.key}
+                href={program.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.3, delay: idx * 0.05 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                className="glass-card rounded-xl p-4 text-center group border border-transparent hover:border-primary/20 transition-all duration-300"
+              >
+                <div className="text-2xl mb-1.5">{program.icon}</div>
+                <p className="text-[10px] font-medium text-muted-foreground group-hover:text-foreground transition-colors leading-tight">{program.label}</p>
+                <ExternalLink className="h-2.5 w-2.5 text-primary/40 group-hover:text-primary mx-auto mt-1.5 transition-colors" />
+              </motion.a>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   )

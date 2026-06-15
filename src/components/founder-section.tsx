@@ -68,7 +68,7 @@ export function FounderSection() {
                   @mulkymalikuldhaher
                 </a>
                 <a
-                  href="mailto:mulkymalikuldhaher@mail.com"
+                  href="mailto:mulkymalikuldhr@mail.com"
                   className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-[10px] text-muted-foreground hover:text-foreground hover:bg-secondary/30 transition-all glass-button border border-transparent hover:border-border/30"
                 >
                   <Mail className="h-3 w-3" />
