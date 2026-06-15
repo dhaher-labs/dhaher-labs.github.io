@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Dhaher Labs — LLM Tools • Quant • Automated Workflows • Open Source',
-  description: 'A small lab building practical AI systems, quantitative tools, and automated workflows. Not a company, not a startup — just a lab.',
-  keywords: ['Dhaher Labs', 'AI', 'Quant', 'Automated Workflows', 'Open Source', 'Mulky Malikul Dhaher'],
+  description: 'A small lab building LLM-integrated tools, quantitative research, and automated workflows. Not a company, not a startup — just a lab.',
+  keywords: ['Dhaher Labs', 'LLM Tools', 'Quant', 'Automated Workflows', 'Open Source', 'Mulky Malikul Dhaher'],
   authors: [{ name: 'Mulky Malikul Dhaher' }],
   openGraph: {
     title: 'Dhaher Labs',

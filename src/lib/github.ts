@@ -100,7 +100,7 @@ export const ORG_PROJECTS: Array<{
   {
     name: 'Misi-Screener',
     displayName: 'Misi-Screener',
-    description: 'Market intelligence engine with agent-based architecture for real-time market data screening.',
+    description: 'Market screening tool with configurable architecture for real-time market data filtering.',
     badges: ['Python', 'FastAPI'],
     accent: '#D9A441',
     href: 'https://github.com/dhaher-labs/Misi-Screener',
@@ -183,7 +183,7 @@ export const CROSS_LINKED_PROJECTS: Array<{
   {
     name: 'Mnemosyne',
     displayName: 'Mnemosyne',
-    description: 'Memory and context management system for AI agents. Persistent context across conversations.',
+    description: 'Memory and context management system for LLM conversations. Persistent context across conversations.',
     badges: ['Python', 'AI'],
     accent: '#A78BFA',
     href: 'https://github.com/dhaher-labs/Mnemosyne',
@@ -193,7 +193,7 @@ export const CROSS_LINKED_PROJECTS: Array<{
   {
     name: 'AI-MultiColony-Ecosystem',
     displayName: 'AI-MultiColony-Ecosystem',
-    description: 'Multi-agent coordination framework. Research project exploring how multiple AI agents can communicate and collaborate.',
+    description: 'Multi-agent coordination framework. Research project exploring how automated agents can communicate and collaborate.',
     badges: ['Python', 'Multi-Agent'],
     accent: '#D9A441',
     href: 'https://github.com/dhaher-labs/AI-MultiColony-Ecosystem',

@@ -43,7 +43,7 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['dhaher labs', 'what is dhaher labs', 'about the lab'],
-    response: "Dhaher Labs is a small personal lab — not a company or startup — building practical AI systems, quantitative tools, and automated workflows. Focus areas: AI Systems, Quant Intelligence, Automated Workflows, and Open Source. Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs",
+    response: "Dhaher Labs is a small personal lab — not a company or startup — building LLM-integrated tools, quantitative research, and automated workflows. Focus areas: LLM Tools, Quant Research, Automated Workflows, and Open Source. Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs",
   },
   {
     patterns: ['proxygate', 'llm gateway', 'llm proxy'],
@@ -63,15 +63,15 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['kalen', 'workflow', 'orchestration'],
-    response: "**KALEN-Autonomous-Workflow** — Workflow orchestration system for configurable task scheduling and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN-Autonomous-Workflow)",
+    response: "**KALEN** — Workflow orchestration system for configurable task scheduling and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN-Autonomous-Workflow)",
   },
   {
-    patterns: ['mnemosyne', 'memory', 'ai agent memory'],
-    response: "**Mnemosyne-AI** — Memory and context management system for AI agents, enabling persistent context across conversations. Built with Python. [GitHub](https://github.com/dhaher-labs/Mnemosyne-AI)",
+    patterns: ['mnemosyne', 'memory', 'llm memory'],
+    response: "**Mnemosyne-AI** — Memory and context management system for LLM conversations, enabling persistent context across sessions. Built with Python. [GitHub](https://github.com/dhaher-labs/Mnemosyne-AI)",
   },
   {
     patterns: ['multicolony', 'multi-agent', 'colony'],
-    response: "**AI-MultiColony-Ecosystem** — Multi-agent coordination framework exploring how multiple AI agents can communicate and collaborate. Research project built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
+    response: "**AI-MultiColony-Ecosystem** — Multi-agent coordination framework exploring how automated agents can communicate and collaborate. Research project built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
   },
   {
     patterns: ['ghoststudio', 'creative studio', 'ghost studio'],
@@ -86,12 +86,12 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
     response: "Dhaher Labs: [@dhaherlabs](https://instagram.com/dhaherlabs) | Personal: [@mulkymalikuldhaher](https://instagram.com/mulkymalikuldhaher)",
   },
   {
-    patterns: ['misi', 'screener', 'market intelligence'],
+    patterns: ['misi', 'screener', 'market screening'],
     response: "**Misi-Screener** — Market screening tool with configurable architecture for real-time market data filtering. Built with Python and FastAPI. [GitHub](https://github.com/dhaher-labs/Misi-Screener)",
   },
   {
     patterns: ['glowpilot', 'skincare'],
-    response: "**GlowPilot-AI** — AI skincare advisor with LLM-powered analysis and voice support. Built with TypeScript and LLM. [GitHub](https://github.com/dhaher-labs/GlowPilot-AI)",
+    response: "**GlowPilot-AI** — LLM-powered skincare advisor with analysis and voice support. Built with TypeScript and LLM. [GitHub](https://github.com/dhaher-labs/GlowPilot-AI)",
   },
   {
     patterns: ['iot', 'nanggroe-iot'],
