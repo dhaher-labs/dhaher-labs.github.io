@@ -50,7 +50,7 @@ const INSTA_POSTS = [
     id: 6,
     gradient: 'from-blue-500/20 to-indigo-600/20',
     title: 'K.A.L.E.N',
-    desc: 'Autonomous workflow orchestration system',
+    desc: 'Workflow orchestration system',
     likes: 31,
     comments: 6,
   },

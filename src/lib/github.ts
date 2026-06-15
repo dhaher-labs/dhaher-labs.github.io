@@ -163,7 +163,7 @@ export const CROSS_LINKED_PROJECTS: Array<{
   {
     name: 'blackhornet',
     displayName: 'blackhornet',
-    description: 'Autonomous data reconnaissance system. AI-powered intelligence gathering and analysis framework.',
+    description: 'Data reconnaissance toolkit. Research project exploring automated data collection and analysis patterns.',
     badges: ['AI', 'Rust'],
     accent: '#D9A441',
     href: 'https://github.com/dhaher-labs/blackhornet',
@@ -173,7 +173,7 @@ export const CROSS_LINKED_PROJECTS: Array<{
   {
     name: 'K.A.L.E.N',
     displayName: 'K.A.L.E.N',
-    description: 'Autonomous workflow orchestration system. Intelligent task scheduling and execution pipeline.',
+    description: 'Workflow orchestration system. Configurable task scheduling and execution pipeline for automated processes.',
     badges: ['TypeScript', 'Node.js'],
     accent: '#00D1C7',
     href: 'https://github.com/dhaher-labs/K.A.L.E.N',
@@ -193,7 +193,7 @@ export const CROSS_LINKED_PROJECTS: Array<{
   {
     name: 'AI-MultiColony-Ecosystem',
     displayName: 'AI-MultiColony-Ecosystem',
-    description: 'Multi-agent orchestration framework. Distributed AI colonies that collaborate on complex tasks.',
+    description: 'Multi-agent coordination framework. Research project exploring how multiple AI agents can communicate and collaborate.',
     badges: ['Python', 'Multi-Agent'],
     accent: '#D9A441',
     href: 'https://github.com/dhaher-labs/AI-MultiColony-Ecosystem',
@@ -203,7 +203,7 @@ export const CROSS_LINKED_PROJECTS: Array<{
   {
     name: 'GhostStudio-AI',
     displayName: 'GhostStudio-AI',
-    description: 'AI-powered creative studio. LLM-driven content generation and creative assistance.',
+    description: 'Creative studio tooling. Integrates with LLM APIs for content generation and creative assistance.',
     badges: ['TypeScript', 'LLM'],
     accent: '#00D1C7',
     href: 'https://github.com/dhaher-labs/GhostStudio-AI',

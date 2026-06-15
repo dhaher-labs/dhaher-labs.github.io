@@ -39,11 +39,11 @@ type ChatMode = 'agent' | 'scan' | 'code'
 const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   {
     patterns: ['who is mulky', 'about mulky', 'tell me about mulky', 'who built this', 'who made this'],
-    response: "Mulky Malikul Dhaher is building Dhaher Labs — a small personal lab where he builds practical AI systems, quantitative tools, and autonomous workflows. By day, he's an industrial maintenance technician and panel control operator at a cement packing plant in Lhokseumawe, Aceh. By night, he codes. He studies Sistem Informasi at Universitas Terbuka.",
+    response: "Mulky Malikul Dhaher is building Dhaher Labs — a small personal lab where he builds practical AI systems, quantitative tools, and automated workflows. By day, he's an industrial maintenance technician and panel control operator at a cement packing plant in Lhokseumawe, Aceh. By night, he codes. He studies Sistem Informasi at Universitas Terbuka.",
   },
   {
     patterns: ['dhaher labs', 'what is dhaher labs', 'about the lab'],
-    response: "Dhaher Labs is a small personal lab — not a company or startup — building practical AI systems, quantitative tools, and autonomous workflows. Focus areas: AI Systems, Quant Intelligence, Autonomous Workflows, and Open Source. Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs",
+    response: "Dhaher Labs is a small personal lab — not a company or startup — building practical AI systems, quantitative tools, and automated workflows. Focus areas: AI Systems, Quant Intelligence, Automated Workflows, and Open Source. Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs",
   },
   {
     patterns: ['proxygate', 'llm gateway', 'llm proxy'],
@@ -59,11 +59,11 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['blackhornet', 'reconnaissance', 'data recon'],
-    response: "**blackhornet** — Autonomous data reconnaissance system for automated data collection and analysis. Built with AI and Rust. [GitHub](https://github.com/dhaher-labs/blackhornet)",
+    response: "**blackhornet** — Data reconnaissance toolkit for automated data collection and analysis. Research project exploring agent-based patterns. Built with Rust. [GitHub](https://github.com/dhaher-labs/blackhornet)",
   },
   {
     patterns: ['kalen', 'workflow', 'orchestration'],
-    response: "**KALEN-Autonomous-Workflow** — Workflow orchestration system for task automation and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN-Autonomous-Workflow)",
+    response: "**KALEN-Autonomous-Workflow** — Workflow orchestration system for configurable task scheduling and process management. Built with TypeScript/Node.js. [GitHub](https://github.com/dhaher-labs/KALEN-Autonomous-Workflow)",
   },
   {
     patterns: ['mnemosyne', 'memory', 'ai agent memory'],
@@ -71,15 +71,15 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['multicolony', 'multi-agent', 'colony'],
-    response: "**AI-MultiColony-Ecosystem** — Multi-agent orchestration framework for coordinating multiple AI agents on complex tasks. Built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
+    response: "**AI-MultiColony-Ecosystem** — Multi-agent coordination framework exploring how multiple AI agents can communicate and collaborate. Research project built with Python. [GitHub](https://github.com/dhaher-labs/AI-MultiColony-Ecosystem)",
   },
   {
     patterns: ['ghoststudio', 'creative studio', 'ghost studio'],
-    response: "**GhostStudio-AI** — AI-powered creative studio for content generation using LLM integration. Built with TypeScript. [GitHub](https://github.com/dhaher-labs/GhostStudio-AI)",
+    response: "**GhostStudio-AI** — Creative studio tooling with LLM API integration for content generation. Built with TypeScript. [GitHub](https://github.com/dhaher-labs/GhostStudio-AI)",
   },
   {
     patterns: ['contact', 'email', 'reach'],
-    response: "Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs | Portfolio: mulkymalikuldhaher.github.io | Personal email: mulkymalikuldhaher@mail.com",
+    response: "Email: dhaher-labs@email.com | Instagram: @dhaherlabs | GitHub: dhaher-labs | Portfolio: mulkymalikuldhaher.github.io | Personal email: mulkymalikuldhr@mail.com",
   },
   {
     patterns: ['instagram', 'ig', 'social'],

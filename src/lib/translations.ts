@@ -16,8 +16,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.name': 'DHAHER LABS',
-    'hero.tagline': 'AI • Quant • Autonomous Workflows • Open Source',
-    'hero.subtitle': 'A small lab building practical AI systems, quantitative tools, and autonomous workflows.',
+    'hero.tagline': 'AI • Quant • Automated Workflows • Open Source',
+    'hero.subtitle': 'A small lab building practical AI systems, quantitative tools, and automated workflows.',
     'hero.cta.projects': 'View Projects',
     'hero.cta.github': 'GitHub',
     'hero.cta.chat': 'Talk to AI Agent',
@@ -25,13 +25,13 @@ export const translations: Record<Language, Record<string, string>> = {
     // About
     'about.label': 'About',
     'about.title': 'What is Dhaher Labs?',
-    'about.p1': 'Dhaher Labs is a small personal lab — not a company, not a startup. It\'s where practical AI systems, quantitative tools, and autonomous workflows are built from scratch.',
+    'about.p1': 'Dhaher Labs is a small personal lab — not a company, not a startup. It\'s where practical AI systems, quantitative tools, and automated workflows are built from scratch.',
     'about.p2': 'The lab focuses on solving real problems with code: from multi-LLM gateways to trading research dashboards, from IoT infrastructure to AI-powered creative studios.',
     'about.p3': 'Every project is open source and built with the philosophy that technology should be accessible, practical, and honest.',
     'about.mission.title': 'Our Mission',
     'about.mission.p1': 'Build practical AI systems that solve real problems — not demos, not hype.',
     'about.mission.p2': 'Create quantitative tools that make complex analysis accessible.',
-    'about.mission.p3': 'Develop autonomous workflows that reduce repetitive work.',
+    'about.mission.p3': 'Develop automated workflows that reduce repetitive work.',
     'about.mission.p4': 'Keep everything open source and transparent.',
 
     // Focus Areas
@@ -41,8 +41,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'focus.ai.desc': 'Multi-LLM gateways, AI coding agents, memory systems, and multi-agent orchestration frameworks.',
     'focus.quant.title': 'Quant Intelligence',
     'focus.quant.desc': 'Trading research dashboards, market intelligence engines, and quantitative analysis tools.',
-    'focus.auto.title': 'Autonomous Workflows',
-    'focus.auto.desc': 'Workflow orchestration, data reconnaissance, and intelligent task scheduling pipelines.',
+    'focus.auto.title': 'Automated Workflows',
+    'focus.auto.desc': 'Workflow orchestration, data reconnaissance, and configurable task scheduling pipelines.',
     'focus.open.title': 'Open Source',
     'focus.open.desc': 'Everything is open source. From Android coding agents to creative studios and IoT infrastructure.',
 
@@ -58,7 +58,7 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Articles
     'articles.title': 'Latest Articles',
-    'articles.subtitle': 'AI-generated insights on AI, quant, and autonomous workflows',
+    'articles.subtitle': 'AI-generated insights on AI, quant, and automated workflows',
     'articles.readMore': 'View All Articles',
     'articles.aiGenerated': 'AI Generated',
     'articles.search': 'Search articles...',
