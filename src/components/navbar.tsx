@@ -56,11 +56,18 @@ export function Navbar() {
         <a href="#" className="flex items-center gap-2.5 group">
           <div className="w-9 h-9 rounded-xl bg-primary/10 flex items-center justify-center glass-button border border-primary/20 overflow-hidden group-hover:border-primary/40 transition-colors">
             <Image
-              src="/dhaherlabs-logo.png"
+              src="/dhaherlabs-logo-dark.png"
               alt="Dhaher Labs"
               width={28}
               height={28}
-              className="object-contain"
+              className="object-contain dark:hidden"
+            />
+            <Image
+              src="/dhaherlabs-logo-light.png"
+              alt="Dhaher Labs"
+              width={28}
+              height={28}
+              className="object-contain hidden dark:block"
             />
           </div>
           <span className="font-bold text-foreground text-sm tracking-wider group-hover:text-primary transition-colors">

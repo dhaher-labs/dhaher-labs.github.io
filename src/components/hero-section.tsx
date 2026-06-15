@@ -55,11 +55,18 @@ export function HeroSection() {
         >
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl glass-card p-2 border border-primary/20 glow-pulse">
             <Image
-              src="/dhaherlabs-logo.png"
+              src="/dhaherlabs-logo-dark.png"
               alt="Dhaher Labs Logo"
               width={80}
               height={80}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain dark:hidden"
+            />
+            <Image
+              src="/dhaherlabs-logo-light.png"
+              alt="Dhaher Labs Logo"
+              width={80}
+              height={80}
+              className="w-full h-full object-contain hidden dark:block"
             />
           </div>
         </motion.div>

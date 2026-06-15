@@ -17,11 +17,18 @@ export function FooterSection() {
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20 overflow-hidden">
                 <Image
-                  src="/dhaherlabs-logo.png"
+                  src="/dhaherlabs-logo-dark.png"
                   alt="Dhaher Labs"
                   width={24}
                   height={24}
-                  className="object-contain"
+                  className="object-contain dark:hidden"
+                />
+                <Image
+                  src="/dhaherlabs-logo-light.png"
+                  alt="Dhaher Labs"
+                  width={24}
+                  height={24}
+                  className="object-contain hidden dark:block"
                 />
               </div>
               <div>

@@ -57,11 +57,18 @@ export default function ArticlesPage() {
           </a>
           <div className="flex items-center gap-2">
             <Image
-              src="/dhaherlabs-logo.png"
+              src="/dhaherlabs-logo-dark.png"
               alt="Dhaher Labs"
               width={24}
               height={24}
-              className="object-contain"
+              className="object-contain dark:hidden"
+            />
+            <Image
+              src="/dhaherlabs-logo-light.png"
+              alt="Dhaher Labs"
+              width={24}
+              height={24}
+              className="object-contain hidden dark:block"
             />
           </div>
         </div>

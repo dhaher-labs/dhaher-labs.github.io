@@ -87,7 +87,7 @@ const knowledgeBase: Array<{ patterns: string[]; response: string }> = [
   },
   {
     patterns: ['misi', 'screener', 'market intelligence'],
-    response: "**Misi-Screener** — Market intelligence engine with agent-based architecture for real-time market data screening. Built with Python and FastAPI. [GitHub](https://github.com/dhaher-labs/Misi-Screener)",
+    response: "**Misi-Screener** — Market screening tool with configurable architecture for real-time market data filtering. Built with Python and FastAPI. [GitHub](https://github.com/dhaher-labs/Misi-Screener)",
   },
   {
     patterns: ['glowpilot', 'skincare'],
@@ -418,7 +418,7 @@ export function Chatbot() {
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(true)}
             className="fixed bottom-5 right-5 z-50 w-14 h-14 rounded-xl bg-primary text-primary-foreground shadow-[0_4px_24px_rgba(217,164,65,0.3)] flex items-center justify-center glass-button safe-bottom glow-gold"
-            aria-label="Open AI Agent"
+            aria-label="Open Chat Assistant"
           >
             <Sparkles className="h-6 w-6" />
           </motion.button>

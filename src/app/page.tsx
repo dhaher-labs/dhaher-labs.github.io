@@ -47,7 +47,7 @@ export default function Home() {
 
       <FooterSection />
 
-      {/* AI Agent Chatbot */}
+      {/* Chat Assistant */}
       <Chatbot />
     </div>
   )

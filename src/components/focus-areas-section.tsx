@@ -11,7 +11,7 @@ const FOCUS_AREAS = [
     descKey: 'focus.ai.desc',
     accent: '#D9A441',
     glow: 'glow-gold',
-    tags: ['LLM Gateways', 'AI Agents', 'Memory Systems'],
+    tags: ['LLM Gateways', 'LLM Tools', 'Memory Systems'],
   },
   {
     icon: TrendingUp,
@@ -19,7 +19,7 @@ const FOCUS_AREAS = [
     descKey: 'focus.quant.desc',
     accent: '#00D1C7',
     glow: 'glow-cyan',
-    tags: ['Trading Dashboards', 'Market Intel', 'Quant Tools'],
+    tags: ['Trading Dashboards', 'Market Screening', 'Quant Tools'],
   },
   {
     icon: Workflow,
